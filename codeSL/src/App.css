@@ -1,0 +1,209 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 12em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.glow-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: #ffffff;
+  text-shadow:
+    0 0 8px #00e0ff,
+    0 0 16px #00e0ff,
+    0 0 24px #00e0ff,
+    0 0 32px #00e0ff;
+  animation: glow-pulse 2s infinite ease-in-out;
+}
+
+@keyframes glow-pulse {
+
+  0%,
+  50% {
+    text-shadow:
+      0 0 8px #00e0ff,
+      0 0 16px #00e0ff,
+      0 0 24px #00e0ff,
+      0 0 32px #00e0ff;
+  }
+
+  50% {
+    text-shadow:
+      0 0 4px #00e0ff,
+      0 0 8px #00e0ff,
+      0 0 12px #00e0ff,
+      0 0 16px #00e0ff;
+  }
+}
+
+.welcome-heading {
+  font-size: 2.8rem;
+  color: var(--text-color);
+  text-shadow:
+    0 0 8px rgba(0, 255, 0, 0.4),
+    0 0 16px rgba(0, 255, 0, 0.2);
+  margin: 0;
+}
+
+.code-sl {
+  color: #4ade80;
+  /* soft green — pick any color you like */
+  text-shadow:
+    0 0 4px rgba(74, 222, 128, 0.6),
+    /* subtle green glow */
+    0 0 8px rgba(74, 222, 128, 0.4);
+  transition: text-shadow 0.3s ease;
+}
+
+/* Optional: even calmer glow */
+.code-sl:hover {
+  text-shadow:
+    0 0 2px rgba(74, 222, 128, 0.5),
+    0 0 4px rgba(74, 222, 128, 0.3);
+}
+
+.start-button {
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #646cff;
+  color: white;
+  transition: filter 300ms ease;
+  will-change: filter;
+}
+
+.start-button:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --card-bg: #f0f0f0;
+  --button-bg: #007bff;
+  --button-text: #fff;
+  --phone-frame-border: #333;
+  --phone-frame-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --card-bg: #1f1f1f;
+  --button-bg: #0d6efd;
+  --button-text: #fff;
+  --phone-frame-border: #555;
+  --phone-frame-bg: #222;
+}
+
+
+/* similarly update your buttons, cards etc */
+.card {
+  color: var(--text-color);
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -20px;
+  right: -110px;
+  /* Bubble stays on the right */
+  background: #ffffff;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+/* Thought puffs on the LEFT side */
+.speech-bubble::before,
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.speech-bubble::before {
+  width: 10px;
+  height: 10px;
+  bottom: -14px;
+  left: 12px;
+  /* ← Shift puff to left */
+}
+
+.speech-bubble::after {
+  width: 6px;
+  height: 6px;
+  bottom: -22px;
+  left: 6px;
+  /* ← Shift smaller puff even further left */
+}
+
+
+
+
+
+@keyframes floatUp {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.cham-wrapper {
+  position: relative;
+  display: inline-block;
+}

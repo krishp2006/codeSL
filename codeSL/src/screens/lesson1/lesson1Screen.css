@@ -1,0 +1,57 @@
+.lesson1-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    height: 100%;
+    background: linear-gradient(135deg, #A78BFA, #8B5CF6);
+    color: var(--text-color);
+    border-radius: 20px;
+    gap: 1.25rem;
+    overflow-y: auto;
+}
+
+.cham-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cham-avatar {
+    height: 50px;
+}
+
+.lesson-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.activity-block {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.options li {
+    background: var(--bg-color);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.options li:hover {
+    background: #d1d5db;
+}
